@@ -1,0 +1,20 @@
+@each $j in $month-lenght {
+  .calendar-#{$j} {
+    @for $i from 1 through $j {
+      >div:nth-child(#{$i}) {
+        &::before {
+          content: "#{$i}";
+          width: $width;
+          height: $height;
+          margin-left: $margin;
+          margin-top: $margin;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid black;
+          transition: all 0.5s 0.1s linear;
+        }
+      }
+    }
+  }
+}

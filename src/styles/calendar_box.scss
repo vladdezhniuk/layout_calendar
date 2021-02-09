@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .calendar {
+    width: ($width + $margin) * 7 ;
+    display: flex;
+    flex-wrap: wrap;
+    .calendar div {
+      width: $width;
+      height: $height;
+    }
+  }
+}
