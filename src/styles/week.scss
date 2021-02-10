@@ -11,7 +11,7 @@ $days: (
 @each $a, $b in $days {
   .calendar-#{$b} {
     > div:first-child {
-      margin-left: ($width + $margin) * $a;
+      margin-left: ($width + $margin + 2px) * $a;
     }
   }
 }
