@@ -6,9 +6,16 @@
     width: ($width + $margin + 2px) *  7;
     display: flex;
     flex-wrap: wrap;
-    .calendar div {
+    div::before {
       width: $width;
       height: $height;
+      margin-left: $margin;
+      margin-top: $margin;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid black;
+      transition: all 0.5s 0.1s linear;
     }
   }
 }
